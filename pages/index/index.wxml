@@ -1,0 +1,9 @@
+<searchbar></searchbar>
+<!-- 电影 -->
+<indexmodule moreurl="/pages/list/list?tag=电影" title="电影" items="{{movies}}" ></indexmodule>
+<!-- 电视剧 -->
+<indexmodule moreurl="/pages/list/list?tag=电视剧" title="电视剧" items="{{tvs}}" type="tv"></indexmodule>
+<!-- 综艺 -->
+<indexmodule moreurl="/pages/list/list?tag=综艺" title="综艺" items="{{shows}}" type="show"></indexmodule>
+<!-- 动漫 -->
+<indexmodule moreurl="/pages/list/list?tag=动漫" title="动漫" items="{{animations}}" type="animations"></indexmodule>

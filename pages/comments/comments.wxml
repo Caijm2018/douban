@@ -1,0 +1,13 @@
+<view class="cmm-container">
+    <view class="item-group" bindtap="onItemTabEvent">
+              <image  class="thumbnail" src="{{thumbnail}}"></image>
+              <view class="item-title">{{title}}</view>
+              <view class="item-rate">{{rate}}</view>
+    </view>
+    <view class="comment-title">全部影评({{comments.total}})</view>
+    <comment wx:for="{{comments.comments}}" wx:key="id" comment="{{item}}"></comment>
+    <view class="page-btn-group">
+        <button bindtap="onPrePageEvent" disabled="{{start <= 1}}" class="page-btn" loading="{{preLoading}}">上一页</button>
+        <button bindtap="onNextPageEvent" loading="{{nextLoading}}" class="page-btn">下一页</button>
+    </view>
+</view>

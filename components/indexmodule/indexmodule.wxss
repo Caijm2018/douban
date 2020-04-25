@@ -1,0 +1,27 @@
+.module-group{
+  padding: 40rpx;
+  background-color: #fff;
+}
+
+.module-group .module-top{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.module-top .module-title{
+  color: #494949;
+}
+
+.module-top .module-more{
+  color: #41be57;
+}
+
+
+.module-scroll-view{
+  width:100%;
+  margin-top: 40rpx;
+  height: 400rpx;
+  white-space: nowrap;
+}
+

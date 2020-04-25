@@ -1,0 +1,37 @@
+<!-- 头部详情 -->
+<view class="item-header">
+  <view class="item-title">{{detail.title}} ({{detail.year}})</view>
+  <view class="item-detail">
+    <view class="left-detail">
+        <view class="item-rate">
+            <stars rate="{{detail.rating.average}}" fontsize="28" fontcolor="#595959"></stars>
+            <text class="comment-persons">{{detail.ratings_count}}人评价</text>
+        </view>
+        <view class="item-sub-detail">
+            <view class="item-type"> {{detail.durations[0]}} {{detail.genres}}</view>
+            <view class="item-show">{{detail.pubdates}}</view>
+            <view class="item-author">{{detail.summary}}</view>
+        </view>
+    </view>
+    <view class="right-detail">
+          <image src="{{detail.images.small}}"></image>
+    </view>
+  </view>
+</view>
+
+<!-- 短评标签 -->
+<view class="item-tags">
+    <view class="item-tags-title">豆瓣成员常用标签</view>
+    <view class="item-tags-list">
+        <text wx:for="{{detail.tags}}" wx:key="item">{{item}}</text>
+    </view>
+</view>
+
+<!-- 短评 -->
+<view class="comment-list-group">
+    <view class="comment-title">短评({{comments.total}})</view>
+    <comment wx:for="{{comments.comments}}" comment="{{item}}" wx:key="id"></comment>
+</view>
+
+<!-- 查看更多 -->
+<navigator url="/pages/comments/comments?id={{detail.id}}&&title={{detail.title}}&&rate={{detail.rating.average}}&&thumbnail={{detail.images.small}}" class="more-comment">查看更多短评</navigator>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "stars":"/components/stars/stars",
+    "indexview":"/components/indexview/indexview"
+  }
+}

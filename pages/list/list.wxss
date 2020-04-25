@@ -1,0 +1,7 @@
+.list-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
